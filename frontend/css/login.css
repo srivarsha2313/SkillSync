@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* FULL DARK BACKGROUND (same system as register) */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1F1F1F,#2D2D2D,#3A3A3A);
+    overflow:hidden;
+}
+
+/* CENTER WRAPPER */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* LOGIN CARD */
+.login-box{
+    width:360px;
+    background:#ffffff;
+    padding:22px 25px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+    text-align:center;
+}
+
+/* LOGO */
+.logo{
+    font-size:42px;
+}
+
+/* TITLE */
+.login-box h1{
+    font-size:34px;
+    color:#FF6B6B;
+    margin-top:5px;
+}
+
+/* TAGLINE */
+.tagline{
+    font-size:13px;
+    font-weight:600;
+    color:#333;
+}
+
+/* WELCOME TEXT */
+.welcome{
+    font-size:12px;
+    color:#777;
+    margin:10px 0 15px 0;
+}
+
+/* INPUTS */
+.input-group{
+    margin-bottom:12px;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:13px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    border-color:#FF6B6B;
+    box-shadow:0 0 8px rgba(255,107,107,0.3);
+}
+
+/* LOGIN BUTTON */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#FF6B6B,#FF8787);
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:5px;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 15px rgba(255,107,107,0.3);
+}
+
+/* LINKS */
+.links{
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px;
+}
+
+.links a{
+    text-decoration:none;
+    font-size:12px;
+    color:#FF6B6B;
+    transition:0.3s;
+}
+
+.links a:hover{
+    color:#2D2D2D;
+}
+
+/* NO SCROLL */
+html, body{
+    overflow:hidden;
+}

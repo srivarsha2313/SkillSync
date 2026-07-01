@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillSync Register</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="register-box">
+
+        <div class="logo">🚀</div>
+
+        <h1>SkillSync</h1>
+
+        <p class="tagline">From Confusion to Career Clarity</p>
+
+        <p class="welcome">Create your account</p>
+
+        <form onsubmit="registerUser(event)">
+
+            <div class="input-group">
+                <input id="name" type="text" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-group">
+                <input id="email" type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <input id="password" type="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-group">
+                <input id="careerGoal" type="text" placeholder="Career Goal (Example: AI Engineer)" required>
+            </div>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+            <div class="links">
+                <a href="login.html">Already have an account?</a>
+                <a href="index.html">Home</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

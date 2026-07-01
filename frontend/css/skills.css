@@ -1,0 +1,235 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+body{
+
+    min-height:100vh;
+    background:#1F1F1F;
+    color:white;
+
+}
+
+
+
+/* NAVBAR */
+
+nav{
+
+    height:70px;
+    background:#2D2D2D;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+}
+
+
+
+.logo{
+
+    font-size:25px;
+    font-weight:600;
+
+}
+
+
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+
+    margin-left:25px;
+
+    font-size:15px;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:#00c6ff;
+
+}
+
+
+
+/* CONTAINER */
+
+
+.container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:85vh;
+
+}
+
+
+
+.skill-box{
+
+
+    width:420px;
+
+    background:#292929;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+
+
+}
+
+
+
+.skill-box h1{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.skill-box p{
+
+    color:#bbb;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* INPUT */
+
+
+.input-group input{
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#1F1F1F;
+
+    color:white;
+
+    font-size:15px;
+
+
+}
+
+
+
+button{
+
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/* SKILL LIST */
+
+
+.skill-list{
+
+    margin-top:35px;
+
+}
+
+
+
+.skill-list h2{
+
+    margin-bottom:15px;
+
+}
+
+
+
+#skills{
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    justify-content:center;
+
+
+}
+
+
+
+.skill-card{
+
+
+    background:#00c6ff;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    color:black;
+
+    font-weight:500;
+
+
+}

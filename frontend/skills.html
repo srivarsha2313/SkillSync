@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillSync - Skills</title>
+
+    <link rel="stylesheet" href="css/skills.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+    <div class="logo">
+        🚀 SkillSync
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="career-result.html">Career</a>
+
+        <a href="login.html">Logout</a>
+
+    </div>
+
+
+</nav>
+
+
+
+<div class="container">
+
+
+    <div class="skill-box">
+
+
+        <h1>Add Your Skills</h1>
+
+        <p>
+            Build your skill profile and track your career growth
+        </p>
+
+
+
+        <form onsubmit="addSkill(event)">
+
+
+
+            <div class="input-group">
+
+                <input 
+                id="skill"
+                type="text"
+                placeholder="Example: Python, Java, React"
+                required>
+
+
+            </div>
+
+
+
+            <button type="submit">
+
+                Add Skill
+
+            </button>
+
+
+
+        </form>
+
+
+
+        <div class="skill-list">
+
+
+            <h2>Your Skills</h2>
+
+
+            <div id="skills">
+
+                <!-- Skills will appear here -->
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+<script src="js/skills.js"></script>
+
+
+</body>
+
+</html>

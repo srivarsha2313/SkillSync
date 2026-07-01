@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1F1F1F,#2D2D2D,#3A3A3A);
+}
+
+/* CENTER CONTAINER */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* SMALL REGISTER BOX */
+.register-box{
+    width:360px;
+    max-height:90vh;
+    background:#ffffff;
+    border-radius:18px;
+    padding:20px 25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+    text-align:center;
+}
+
+/* LOGO */
+.logo{
+    font-size:40px;
+}
+
+/* TITLE */
+.register-box h1{
+    font-size:32px;
+    color:#FF6B6B;
+}
+
+/* TAGLINE */
+.tagline{
+    font-size:13px;
+    color:#333;
+    font-weight:600;
+}
+
+.welcome{
+    font-size:12px;
+    color:#777;
+    margin-bottom:10px;
+}
+
+/* INPUTS */
+.input-group{
+    margin-bottom:10px;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    padding:9px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:13px;
+    outline:none;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+    border-color:#FF6B6B;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#FF6B6B,#FF8787);
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    margin-top:5px;
+}
+
+/* LINKS */
+.links{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+
+.links a{
+    text-decoration:none;
+    font-size:12px;
+    color:#FF6B6B;
+}
+
+/* REMOVE SCROLL COMPLETELY */
+html, body{
+    overflow:hidden;
+}

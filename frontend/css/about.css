@@ -1,0 +1,301 @@
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* ===========================
+   Navigation Bar
+=========================== */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#ffffff;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#6c63ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#6c63ff;
+}
+
+.register-btn{
+    background:#6c63ff;
+    color:white !important;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+.register-btn:hover{
+    background:#5548e5;
+}
+
+/* ===========================
+   About Page
+=========================== */
+
+.about-page{
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+    padding:40px;
+
+}
+
+.about-page h1{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#6c63ff;
+
+    margin-bottom:30px;
+
+}
+
+.intro{
+
+    text-align:center;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.about-page h2{
+
+    color:#6c63ff;
+
+    margin-top:40px;
+
+    margin-bottom:15px;
+
+}
+
+.about-page p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#444;
+
+}
+
+/* ===========================
+   Mission Box
+=========================== */
+
+.mission-box{
+
+    background:white;
+
+    padding:30px;
+
+    margin:40px 0;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.mission-box h2{
+
+    margin-bottom:10px;
+
+}
+
+.mission-box p{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   About List
+=========================== */
+
+.about-list{
+
+    margin-top:20px;
+
+    margin-bottom:30px;
+
+    padding-left:25px;
+
+}
+
+.about-list li{
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+   Feature Grid
+=========================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.feature-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.feature-box h3{
+
+    color:#6c63ff;
+
+    margin-bottom:15px;
+
+}
+
+.feature-box p{
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    margin-top:70px;
+
+    padding:25px;
+
+    text-align:center;
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .about-page{
+
+        padding:20px;
+
+    }
+
+    .about-page h1{
+
+        font-size:34px;
+
+    }
+
+    .intro{
+
+        font-size:18px;
+
+    }
+
+}

@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillSync Resume Builder</title>
+
+    <link rel="stylesheet" href="css/resume.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loadResume()">
+
+<div class="container">
+
+    <h1>📄 Resume Builder</h1>
+
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <input type="text" id="address" placeholder="Address">
+
+    <textarea id="objective" placeholder="Career Objective"></textarea>
+
+    <textarea id="skills" placeholder="Skills"></textarea>
+
+    <textarea id="education" placeholder="Education"></textarea>
+
+    <textarea id="projects" placeholder="Projects"></textarea>
+
+    <textarea id="certifications" placeholder="Certifications"></textarea>
+
+    <textarea id="languages" placeholder="Languages"></textarea>
+
+    <textarea id="hobbies" placeholder="Hobbies"></textarea>
+
+    <button onclick="saveResume()">
+        Save Resume
+    </button>
+
+    <button onclick="previewResume()">
+        Preview Resume
+    </button>
+
+    <button onclick="downloadResume()">
+        Download Resume PDF
+    </button>
+
+    <button onclick="printResume()">
+        🖨️ Print Resume
+    </button>
+
+</div>
+
+<div class="preview" id="preview">
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="js/resume.js"></script>
+
+</body>
+
+</html>
+```

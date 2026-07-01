@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillSync | AI Job Recommendation</title>
+
+    <link rel="stylesheet" href="css/job.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>AI Job Recommendation</h1>
+
+        <p>Find the best jobs based on your career path.</p>
+
+    </div>
+
+    <div class="filter-card">
+
+        <div class="input-group">
+
+            <label>Career</label>
+
+            <select id="career">
+
+                <option>AI Engineer</option>
+                <option>Data Scientist</option>
+                <option>Full Stack Developer</option>
+                <option>Cloud Engineer</option>
+                <option>Cyber Security</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Experience</label>
+
+            <select id="experience">
+
+                <option>Student</option>
+                <option>Fresher</option>
+                <option>0-1 Years</option>
+                <option>2-5 Years</option>
+
+            </select>
+
+        </div>
+
+        <button onclick="generateJobs()">
+
+            Get AI Recommendations
+
+        </button>
+
+    </div>
+
+    <div id="loading" class="loading">
+
+        Generating AI Recommendations...
+
+    </div>
+
+    <div id="jobsContainer">
+
+    </div>
+
+</div>
+
+<script src="js/job.js"></script>
+
+</body>
+</html>

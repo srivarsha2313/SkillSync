@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Interview Preparation</title>
+
+    <link rel="stylesheet" href="css/interview.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>SkillSync</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+            <li class="active">🎤 Interview Prep</li>
+
+            <li><a href="roadmap.html">🛣️ Roadmap</a></li>
+
+            <li><a href="projects.html">💼 Projects</a></li>
+
+            <li><a href="profile.html">👤 Profile</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <h1>Interview Preparation</h1>
+
+        <p class="subtitle">
+            Practice interview questions based on your chosen career.
+        </p>
+
+        <!-- Career Selection -->
+
+        <div class="career-box">
+
+            <label>Select Career</label>
+
+            <select id="career">
+
+                <option value="AI Engineer">AI Engineer</option>
+
+                <option value="Data Scientist">Data Scientist</option>
+
+                <option value="Full Stack Developer">Full Stack Developer</option>
+
+                <option value="Cloud Engineer">Cloud Engineer</option>
+
+                <option value="Cyber Security">Cyber Security</option>
+
+            </select>
+
+            <button onclick="loadQuestions()">
+                Load Questions
+            </button>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+            <p id="progressText">
+                Question 0 / 0
+            </p>
+
+        </div>
+
+        <!-- Question Card -->
+
+        <div class="question-card">
+
+            <span id="difficulty" class="badge">
+                Easy
+            </span>
+
+            <h2 id="question">
+                Select a career to begin.
+            </h2>
+
+            <!-- Student Answer -->
+
+        <div class="student-answer">
+
+            <label>Your Answer</label>
+
+            <textarea
+                id="studentAnswer"
+                placeholder="Type your answer here..."
+                rows="7">
+            </textarea>
+
+        </div>
+
+        <div class="button-group">
+
+            <button onclick="evaluateAnswer()">
+                Submit Answer
+            </button>
+
+        </div>
+
+        <!-- AI Feedback -->
+
+        <div id="feedbackCard" class="feedback hidden">
+
+            <h3>AI Evaluation</h3>
+
+            <p id="score"></p>
+
+            <p id="feedback"></p>
+
+            <p id="modelAnswer"></p>
+
+        </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div class="navigation">
+
+            <button onclick="previousQuestion()">
+                ◀ Previous
+            </button>
+
+            <button onclick="nextQuestion()">
+                Next ▶
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/interview.js"></script>
+
+</body>
+</html>

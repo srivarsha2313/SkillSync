@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillSync Career Assessment</title>
+
+    <link rel="stylesheet" href="css/career-assessment.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="assessment-card">
+
+        <h1>🎯 Career Assessment</h1>
+
+        <p>Answer a few questions to discover your best career path.</p>
+
+        <!-- Progress Bar -->
+
+        <div class="progress-container">
+
+            <div class="progress-bar" id="progressBar"></div>
+
+        </div>
+
+        <div class="progress-text">
+
+            Question <span id="questionNumber">1</span> of 5
+
+        </div>
+
+        <!-- Question -->
+
+        <div class="question">
+
+            <h2 id="questionText"></h2>
+
+        </div>
+
+        <!-- Options -->
+
+        <div id="optionsContainer">
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="prevBtn" onclick="previousQuestion()">
+
+                Previous
+
+            </button>
+
+            <button id="nextBtn" onclick="nextQuestion()">
+
+                Next
+
+            </button>
+
+        </div>
+
+        <!-- Result -->
+
+        <div id="result" class="result">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/career-assessment.js"></script>
+
+</body>
+
+</html>

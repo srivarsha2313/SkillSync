@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkillSync Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loadDashboard()">
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<h2>🚀 SkillSync</h2>
+
+<ul>
+
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+<li><a href="profile.html">👤 Profile</a></li>
+
+<li><a href="career-assessment.html">🎯 Career Assessment</a></li>
+
+<li><a href="roadmap.html">🗺️ Career Roadmap</a></li>
+
+<li><a href="skills.html">💻 Skills</a></li>
+
+<li><a href="projects.html">📂 Projects</a></li>
+
+<li><a href="certificates.html">🏆 Certificates</a></li>
+
+<li><a href="resume.html">📄 Resume Builder</a></li>
+
+<li><a href="interview.html">🎤 Interview Prep</a></li>
+
+<li><a href="jobs.html">💼 Job Recommendations</a></li>
+
+<li><a href="career-advisor.html">🤖 AI Career Advisor</a></li>
+
+<li onclick="logout()">🚪 Logout</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>Welcome, <span id="userName"></span> 👋</h1>
+
+<p>Your Personal Career Development Platform</p>
+
+</div>
+
+<!-- ================= DASHBOARD STATS ================= -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🎯 Career Goal</h3>
+
+<p id="careerGoal">Loading...</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Career Readiness</h3>
+
+<p id="careerReadiness">0%</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 Skills</h3>
+
+<p id="skillCount">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>📂 Projects</h3>
+
+<p id="projectCount">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Certificates</h3>
+
+<p id="certificateCount">0</p>
+
+</div>
+
+</div>
+
+<!-- ================= PLACEMENT READINESS ================= -->
+
+<h2 style="margin-top:40px;">🎯 Placement Readiness</h2>
+
+<div class="placement-card">
+
+<div class="placement-header">
+
+<div class="score-circle">
+
+<span id="overallScore">0%</span>
+
+</div>
+
+<div class="placement-info">
+
+<h3 id="placementStatus">Loading...</h3>
+
+<div class="progress-bar">
+
+<div id="overallProgress"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="score-grid">
+
+<div class="score-item">
+
+<span>Career Assessment</span>
+
+<strong id="assessmentScore">0%</strong>
+
+</div>
+
+<div class="score-item">
+
+<span>Skills</span>
+
+<strong id="skillsScore">0%</strong>
+
+</div>
+
+<div class="score-item">
+
+<span>Projects</span>
+
+<strong id="projectsScore">0%</strong>
+
+</div>
+
+<div class="score-item">
+
+<span>Resume</span>
+
+<strong id="resumeScore">0%</strong>
+
+</div>
+
+<div class="score-item">
+
+<span>Interview</span>
+
+<strong id="interviewScore">0%</strong>
+
+</div>
+
+<div class="score-item">
+
+<span>Certificates</span>
+
+<strong id="certificateScore">0%</strong>
+
+<h2 style="margin-top:40px;">📊 Dashboard Analytics</h2>
+
+<div class="analytics-card">
+
+<canvas id="analyticsChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<h2 style="margin-top:40px;">Quick Actions</h2>
+
+<div class="cards">
+
+<div class="card" onclick="location.href='career-assessment.html'">
+
+<h3>🎯 Career Assessment</h3>
+
+<p>Find your ideal career path</p>
+
+</div>
+
+<div class="card" onclick="location.href='roadmap.html'">
+
+<h3>🗺️ Career Roadmap</h3>
+
+<p>View Roadmap</p>
+
+</div>
+
+<div class="card" onclick="location.href='skills.html'">
+
+<h3>💻 Skills Tracker</h3>
+
+<p>Manage Skills</p>
+
+</div>
+
+<div class="card" onclick="location.href='projects.html'">
+
+<h3>📂 Projects</h3>
+
+<p>Manage Projects</p>
+
+</div>
+
+<div class="card" onclick="location.href='certificates.html'">
+
+<h3>🏆 Certificates</h3>
+
+<p>Manage Certificates</p>
+
+</div>
+
+<div class="card" onclick="location.href='resume.html'">
+
+<h3>📄 Resume Builder</h3>
+
+<p>Generate Resume</p>
+
+</div>
+
+<div class="card" onclick="location.href='interview.html'">
+
+<h3>🎤 Interview Preparation</h3>
+
+<p>Practice Questions</p>
+
+</div>
+
+<div class="card" onclick="location.href='jobs.html'">
+
+<h3>💼 Job Recommendations</h3>
+
+<p>Explore Jobs</p>
+
+<div class="card" onclick="location.href='career-advisor.html'">
+
+<h3>🤖 AI Career Advisor</h3>
+
+<p>Ask AI Career Questions</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
+
+<h2 style="margin-top:40px;">📅 Recent Activity</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>🎤 Last Interview</h3>
+        <p>AI Engineer Interview Completed</p>
+    </div>
+
+    <div class="card">
+        <h3>💼 Latest Recommendation</h3>
+        <p>Google AI Engineer Intern</p>
+    </div>
+
+    <div class="card">
+        <h3>📄 Resume</h3>
+        <p>Resume Generated Successfully</p>
+    </div>
+
+</div>
